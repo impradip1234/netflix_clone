@@ -43,10 +43,44 @@ nav img{
   background:rgba(0,0,0,0.6);
   color:white;
   border:1px solid #666;
-  padding:0px 24px;
-  border-radius:8px;
+  padding:10px 24px;
+  border-radius:10px;
   font-size:32px;
 }
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* .lang {
+  padding: 8px 14px;
+  cursor: pointer;
+} */
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  color: white;
+  min-width: 260px;
+}
+
+.lang-dropdown:focus-within .lang-menu {
+  display: block;
+}
+
+.lang-menu div {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.lang-menu div:hover {
+  background: #e75b5b;
+}
+
+
 
 .signin{
   background:#e50914;
@@ -117,13 +151,25 @@ nav img{
   border-radius:8px;
   cursor:pointer;
 }
-
-.first {
-    display: flex;
-    justify-content: center;
-    max-width: 70vw;
-    margin: auto;
-    color: white;
-    justify-content: center;
-    align-items: center;
+.first{
+  display:flex;
+  justify-content: center;
+  max-width:80vw;
+  margin:auto;
+  justify-content: center;
+  align-items:center;
+}
+.secImg{
+  position: relative;
+}
+.secImg img{
+  width:30vw;
+}
+secImg video{
+  position: absolute;
+    top: 143px;
+    left: 115px;
+    size: 183px;
+    width: 700px;
+    z-index: -1;
 }
